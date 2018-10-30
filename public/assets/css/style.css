@@ -1,17 +1,124 @@
+/*FONTS*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?hc50u6');
+  src:  url('../fonts/icomoon.eot?hc50u6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hc50u6') format('truetype'),
+    url('../fonts/icomoon.woff?hc50u6') format('woff'),
+    url('../fonts/icomoon.svg?hc50u6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cloud-download:before {
+  content: "\e9c2";
+  color: white;
+}
+.icon-checkmark:before {
+  content: "\ea10";
+  color: white;
+}
+.icon-facebook:before {
+  content: "\ea90";
+  color: white;
+}
+.icon-github:before {
+  content: "\eab0";
+  color: white;
+}
+.icon-linkedin:before {
+  content: "\eac9";
+  color: white;
+}
+
+/*MIS ESTILOS*/
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.avatar img{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.cabecera{
+  padding: 30px 0;
+  background: #f5f5f5;
+}
+
+.contacto{
+  display: flex;
+  justify-content:space-between;
+}
+
+.contacto a{
+  background: black;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv button{
+  font-size: x-large;
+}
+
+.cv button a{
+  color: white;
+  text-decoration: none;
+}
+
+.cv button span{
+  margin-right: 5px;
+}
+
+.especialidad{
+  color: #778492;
+  font-family: "Lato", arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 .me{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #3081FF;
-  padding: 50px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.me img{
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+.me .avatar img{
+  margin-right: 30px;
 }
 
-.me h3{
-  margin-top: 12px;
+.nombre{
+  color: #49515a;
+  font-size: 38px;
+  margin-bottom: 5px;
+  margin-top: 30px;
 }
