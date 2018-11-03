@@ -137,6 +137,10 @@ body{
   font-weight: bold;
 }
 
+.subtitle{
+  margin-top: 13px;
+}
+
 .title{
   color: #778492;
   font-weight: 400;
