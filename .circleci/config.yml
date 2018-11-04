@@ -18,10 +18,6 @@ jobs:
 
     steps:
       - checkout
-      - run: docker build -t portafolio .
-
-       # run tests!
-      - run: docker run portafolio npm test
 
       # Download and cache dependencies
       - restore_cache:
