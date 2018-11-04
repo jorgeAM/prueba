@@ -1,11 +1,11 @@
-FROM NODE:8
+FROM NODE:8.11.3
 
-WORKDIR /home/nodejs/app
+WORKDIR /usr/src/app
 
-COPY package.json
+COPY package.json ./
 RUN npm install
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 3000
 CMD ["npm", "start"]
